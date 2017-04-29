@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -179,21 +179,25 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETh-e1-wxd" id="C4d-sD-U0M">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-yG-tEp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FURNITURE 1" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-yG-tEp">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="134.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f98-5a-Bzr">
-                                            <rect key="frame" x="8" y="88.5" width="359" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Furniture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f98-5a-Bzr">
+                                            <rect key="frame" x="8" y="93.5" width="359" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="3nm-kc-4KU"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-hi-ogx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="HJd-yG-tEp" secondAttribute="bottom" id="7kC-S3-9Oa"/>
@@ -209,6 +213,162 @@
                                     <outlet property="categoryImage" destination="HJd-yG-tEp" id="exN-TT-TjN"/>
                                     <outlet property="categoryName" destination="f98-5a-Bzr" id="kAE-Ci-n0C"/>
                                     <segue destination="5AJ-DY-bbq" kind="show" identifier="categorySegue" id="SeE-cC-2G0"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="jZ7-Fw-JAs" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="163" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZ7-Fw-JAs" id="U4E-Pn-zCQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Electronics" translatesAutoresizingMaskIntoConstraints="NO" id="z22-fy-CbA">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="134.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Electronics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-HY-qCO">
+                                            <rect key="frame" x="8" y="87.5" width="359" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="LfI-lQ-k8A"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86C-hA-e7h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="z22-fy-CbA" secondAttribute="bottom" id="42H-CP-Ac5"/>
+                                        <constraint firstAttribute="trailing" secondItem="z22-fy-CbA" secondAttribute="trailing" id="BAC-p7-ESX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dcL-HY-qCO" secondAttribute="trailing" id="GSK-Vj-Kl3"/>
+                                        <constraint firstItem="dcL-HY-qCO" firstAttribute="leading" secondItem="U4E-Pn-zCQ" secondAttribute="leadingMargin" id="Xas-cU-gXk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dcL-HY-qCO" secondAttribute="bottom" constant="8" id="jG8-Pu-0fr"/>
+                                        <constraint firstItem="z22-fy-CbA" firstAttribute="leading" secondItem="U4E-Pn-zCQ" secondAttribute="leading" id="mwi-JA-qDc"/>
+                                        <constraint firstItem="z22-fy-CbA" firstAttribute="top" secondItem="U4E-Pn-zCQ" secondAttribute="top" id="rOW-DE-l9c"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryImage" destination="z22-fy-CbA" id="ke8-90-CNH"/>
+                                    <outlet property="categoryName" destination="dcL-HY-qCO" id="TMF-AR-Zhy"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="KTi-G3-jpu" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="298" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTi-G3-jpu" id="d8d-52-dSa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home-cover" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-T2-cn2">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="134.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Books" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63d-k9-FqO">
+                                            <rect key="frame" x="8" y="87.5" width="359" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="TIt-aQ-ZrC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-JX-mLR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="hlD-T2-cn2" secondAttribute="trailing" id="0cR-gm-LGn"/>
+                                        <constraint firstItem="63d-k9-FqO" firstAttribute="leading" secondItem="d8d-52-dSa" secondAttribute="leadingMargin" id="24s-4m-ksE"/>
+                                        <constraint firstAttribute="bottom" secondItem="hlD-T2-cn2" secondAttribute="bottom" id="787-Mb-gWd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="63d-k9-FqO" secondAttribute="bottom" constant="8" id="CKE-jm-p7U"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="63d-k9-FqO" secondAttribute="trailing" id="DdL-SP-UvR"/>
+                                        <constraint firstItem="hlD-T2-cn2" firstAttribute="top" secondItem="d8d-52-dSa" secondAttribute="top" id="fXK-pm-ErF"/>
+                                        <constraint firstItem="hlD-T2-cn2" firstAttribute="leading" secondItem="d8d-52-dSa" secondAttribute="leading" id="khe-r2-eRt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryImage" destination="hlD-T2-cn2" id="qwH-fW-Hos"/>
+                                    <outlet property="categoryName" destination="63d-k9-FqO" id="x2Y-aE-mYt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="fct-eK-eeH" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="433" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fct-eK-eeH" id="dao-cZ-oFW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Other" translatesAutoresizingMaskIntoConstraints="NO" id="a7W-wd-QtQ">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="134.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-Vk-fRT">
+                                            <rect key="frame" x="8" y="87.5" width="359" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="RMv-rK-76D"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kY-YG-F8q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VpS-Vk-fRT" secondAttribute="bottom" constant="8" id="0O5-cL-v0J"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VpS-Vk-fRT" secondAttribute="trailing" id="9MB-lX-UkV"/>
+                                        <constraint firstItem="VpS-Vk-fRT" firstAttribute="leading" secondItem="dao-cZ-oFW" secondAttribute="leadingMargin" id="OjR-YK-rVd"/>
+                                        <constraint firstItem="a7W-wd-QtQ" firstAttribute="leading" secondItem="dao-cZ-oFW" secondAttribute="leading" id="Ppj-ft-HW6"/>
+                                        <constraint firstAttribute="bottom" secondItem="a7W-wd-QtQ" secondAttribute="bottom" id="dxj-nc-kJh"/>
+                                        <constraint firstItem="a7W-wd-QtQ" firstAttribute="top" secondItem="dao-cZ-oFW" secondAttribute="top" id="qkB-yx-JRj"/>
+                                        <constraint firstAttribute="trailing" secondItem="a7W-wd-QtQ" secondAttribute="trailing" id="ygo-fd-bgx"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryImage" destination="a7W-wd-QtQ" id="C4o-GV-72d"/>
+                                    <outlet property="categoryName" destination="VpS-Vk-fRT" id="7KH-GR-GJh"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="qzp-Gp-JBq" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="568" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qzp-Gp-JBq" id="AOI-Vz-gJU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-80-hdv">
+                                            <rect key="frame" x="0.0" y="1" width="375" height="134.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6n-qO-4bY">
+                                            <rect key="frame" x="8" y="87.5" width="359" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="7om-fT-KhL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSk-RA-wTj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aHk-80-hdv" firstAttribute="top" secondItem="AOI-Vz-gJU" secondAttribute="top" id="Fc3-bv-eVh"/>
+                                        <constraint firstAttribute="trailing" secondItem="aHk-80-hdv" secondAttribute="trailing" id="Lpz-x8-ZCm"/>
+                                        <constraint firstItem="N6n-qO-4bY" firstAttribute="leading" secondItem="AOI-Vz-gJU" secondAttribute="leadingMargin" id="Qza-h0-eCA"/>
+                                        <constraint firstItem="aHk-80-hdv" firstAttribute="leading" secondItem="AOI-Vz-gJU" secondAttribute="leading" id="V2b-5Z-dZZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="aHk-80-hdv" secondAttribute="bottom" id="aiQ-6Z-rH2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="N6n-qO-4bY" secondAttribute="trailing" id="aol-2D-YtL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="N6n-qO-4bY" secondAttribute="bottom" constant="8" id="oDW-q5-zFU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryImage" destination="aHk-80-hdv" id="AHT-m8-yEu"/>
+                                    <outlet property="categoryName" destination="N6n-qO-4bY" id="7ak-gs-NpZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -281,4 +441,10 @@
             <point key="canvasLocation" x="470" y="-95"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Electronics" width="1500" height="1000"/>
+        <image name="FURNITURE 1" width="2552" height="1224"/>
+        <image name="Other" width="960" height="631"/>
+        <image name="home-cover" width="1920" height="640"/>
+    </resources>
 </document>
