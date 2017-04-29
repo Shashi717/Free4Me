@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>653637716678-3me5475t6hflsvq92pfnpo1ah5fh8as7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.653637716678-3me5475t6hflsvq92pfnpo1ah5fh8as7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBUmXmC7j2NnPr1gpjJ6qGpurLSJyxbae8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>653637716678</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cunyHack.freewifi.Free4Me</string>
+	<key>PROJECT_ID</key>
+	<string>free4me-49bcf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>free4me-49bcf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:653637716678:ios:ce5ed6ca182f4793</string>
+	<key>DATABASE_URL</key>
+	<string>https://free4me-49bcf.firebaseio.com</string>
+</dict>
+</plist>
