@@ -25,7 +25,6 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         freebiesCollectionView.delegate = self
         freebiesCollectionView.dataSource = self
         
-    
         let nib = UINib(nibName: "FreebiesCollectionViewCell", bundle:nil)
         freebiesCollectionView.register(nib, forCellWithReuseIdentifier: "freebieCell")
       
@@ -47,7 +46,7 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let cell = freebiesCollectionView.dequeueReusableCell(withReuseIdentifier: "freebieCell", for: indexPath) as! FreebiesCollectionViewCell
         
-        cell.freebieName.text = "jjkbbk m,"
+        cell.freebieName.text = ""
         
         return cell
     }
