@@ -43,7 +43,7 @@
             </constraints>
             <size key="customSize" width="254" height="351"/>
             <connections>
-                <outlet property="freebieImage" destination="tgp-kS-Zkk" id="dn7-KL-ZJu"/>
+                <outlet property="freebieImageView" destination="tgp-kS-Zkk" id="gFN-WV-pHi"/>
                 <outlet property="freebieName" destination="CCg-eg-YaG" id="5kk-xa-Cs2"/>
             </connections>
             <point key="canvasLocation" x="136" y="254.5"/>

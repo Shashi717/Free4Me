@@ -55,6 +55,8 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         selectedBorough = boroughs[boroSegmentedControl.selectedSegmentIndex]
         
+        
+        
     }
     
     /*

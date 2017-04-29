@@ -10,7 +10,7 @@ import UIKit
 
 class FreebiesCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var freebieImage: UIImageView!
+    @IBOutlet weak var freebieImageView: UIImageView!
     @IBOutlet weak var freebieName: UILabel!
 
     override func awakeFromNib() {
