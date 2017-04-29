@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723941EB4EB9100A19919 /* AppDelegate.swift */; };
-		9BA723971EB4EB9100A19919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723961EB4EB9100A19919 /* ViewController.swift */; };
 		9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA723981EB4EB9100A19919 /* Main.storyboard */; };
 		9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239B1EB4EB9100A19919 /* Assets.xcassets */; };
 		9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */; };
+		9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BA723911EB4EB9100A19919 /* Free4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA723941EB4EB9100A19919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BA723961EB4EB9100A19919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BA723991EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BA7239B1EB4EB9100A19919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA7239E1EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA723A01EB4EB9100A19919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
-				9BA723961EB4EB9100A19919 /* ViewController.swift */,
 				9BA723981EB4EB9100A19919 /* Main.storyboard */,
+				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
 				9BA7239B1EB4EB9100A19919 /* Assets.xcassets */,
 				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
 				9BA723A01EB4EB9100A19919 /* Info.plist */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA723971EB4EB9100A19919 /* ViewController.swift in Sources */,
+				9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */,
 				9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +304,7 @@
 				9BA723A51EB4EB9100A19919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
