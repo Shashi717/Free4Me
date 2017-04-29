@@ -14,7 +14,9 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var freebiesCollectionView: UICollectionView!
     
     var itemsArr: [Freebie] = []
+    var boroughs = ["All", "Bronx", "Brooklyn", "Manhattan", "Queens"]
     var selectedCategory = ""
+    var selectedBorough = "all"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +24,15 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         print(selectedCategory)
         freebiesCollectionView.delegate = self
         freebiesCollectionView.dataSource = self
+        
+    
+        let nib = UINib(nibName: "FreebiesCollectionViewCell", bundle:nil)
+        freebiesCollectionView.register(nib, forCellWithReuseIdentifier: "freebieCell")
       
     }
 
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -39,10 +47,17 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let cell = freebiesCollectionView.dequeueReusableCell(withReuseIdentifier: "freebieCell", for: indexPath) as! FreebiesCollectionViewCell
         
-        //cell.backgroundColor? = .blue
+        cell.freebieName.text = "jjkbbk m,"
         
         return cell
     }
+    
+    @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
+        
+        selectedBorough = boroughs[boroSegmentedControl.selectedSegmentIndex]
+        
+    }
+    
     /*
     // MARK: - Navigation
 

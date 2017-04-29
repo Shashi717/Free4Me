@@ -42,6 +42,10 @@
                 <constraint firstAttribute="bottom" secondItem="CCg-eg-YaG" secondAttribute="bottom" constant="8" id="y2H-5r-RXe"/>
             </constraints>
             <size key="customSize" width="254" height="351"/>
+            <connections>
+                <outlet property="freebieImage" destination="tgp-kS-Zkk" id="dn7-KL-ZJu"/>
+                <outlet property="freebieName" destination="CCg-eg-YaG" id="5kk-xa-Cs2"/>
+            </connections>
             <point key="canvasLocation" x="136" y="254.5"/>
         </collectionViewCell>
     </objects>
