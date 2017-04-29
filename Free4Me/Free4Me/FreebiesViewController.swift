@@ -14,10 +14,12 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var freebiesCollectionView: UICollectionView!
     
     var itemsArr: [Freebie] = []
+    var selectedCategory = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(selectedCategory)
         freebiesCollectionView.delegate = self
         freebiesCollectionView.dataSource = self
       

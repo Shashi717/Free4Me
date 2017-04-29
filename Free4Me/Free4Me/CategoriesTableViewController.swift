@@ -10,6 +10,9 @@ import UIKit
 
 class CategoriesTableViewController: UITableViewController {
 
+    
+    let categories = ["Books", "Furniture", "Tickets", "Electronics", "Other"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,32 +23,27 @@ class CategoriesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return categories.count
     }
 
-    /*
+ 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! CategoriesTableViewCell
 
-        // Configure the cell...
+       cell.categoryName.text = categories[indexPath.row]
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,14 +80,24 @@ class CategoriesTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "categorySegue" {
+            if let fvc = segue.destination as? FreebiesViewController {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    let category = categories[indexPath.row]
+                    fvc.selectedCategory = category
+                }
+                
+            }
+        }
+       
+        
     }
-    */
+
 
 }
