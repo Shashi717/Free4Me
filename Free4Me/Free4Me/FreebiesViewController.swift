@@ -8,20 +8,37 @@
 
 import UIKit
 
-class FreebiesViewController: UIViewController {
+class FreebiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var boroSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var freebiesCollectionView: UICollectionView!
+    
+    var itemsArr: [Freebie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        freebiesCollectionView.delegate = self
+        freebiesCollectionView.dataSource = self
+      
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+  
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = freebiesCollectionView.dequeueReusableCell(withReuseIdentifier: "freebieCell", for: indexPath) as! FreebiesCollectionViewCell
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 

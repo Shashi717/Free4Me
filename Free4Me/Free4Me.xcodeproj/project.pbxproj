@@ -12,6 +12,12 @@
 		9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239B1EB4EB9100A19919 /* Assets.xcassets */; };
 		9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */; };
 		9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */; };
+		9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */; };
+		9BC0EA201EB4F84A00275967 /* FreebiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */; };
+		9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA211EB4FB2200275967 /* Freebie.swift */; };
+		9BC0EA241EB4FB7200275967 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA231EB4FB7200275967 /* User.swift */; };
+		9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA251EB4FC9800275967 /* FreebieStore.swift */; };
+		9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA271EB4FCA200275967 /* UserStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		9BA7239E1EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA723A01EB4EB9100A19919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesViewController.swift; sourceTree = "<group>"; };
+		9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreebiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BC0EA211EB4FB2200275967 /* Freebie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freebie.swift; sourceTree = "<group>"; };
+		9BC0EA231EB4FB7200275967 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9BC0EA251EB4FC9800275967 /* FreebieStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieStore.swift; sourceTree = "<group>"; };
+		9BC0EA271EB4FCA200275967 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +68,13 @@
 			children = (
 				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
 				9BA723981EB4EB9100A19919 /* Main.storyboard */,
+				9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */,
+				9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */,
 				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
+				9BC0EA251EB4FC9800275967 /* FreebieStore.swift */,
+				9BC0EA271EB4FCA200275967 /* UserStore.swift */,
+				9BC0EA211EB4FB2200275967 /* Freebie.swift */,
+				9BC0EA231EB4FB7200275967 /* User.swift */,
 				9BA7239B1EB4EB9100A19919 /* Assets.xcassets */,
 				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
 				9BA723A01EB4EB9100A19919 /* Info.plist */,
@@ -127,6 +145,7 @@
 				9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */,
 				9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */,
 				9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */,
+				9BC0EA201EB4F84A00275967 /* FreebiesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */,
+				9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */,
 				9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */,
+				9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */,
+				9BC0EA241EB4FB7200275967 /* User.swift in Sources */,
+				9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */,
+				9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
