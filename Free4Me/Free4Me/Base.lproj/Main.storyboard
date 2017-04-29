@@ -72,7 +72,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-S9-jxY">
                                 <rect key="frame" x="5" y="109" width="354" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-zn-3iF">
@@ -90,7 +90,6 @@
                                 <rect key="frame" x="0.0" y="80" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-zV-1qQ">
@@ -126,7 +125,8 @@
                                 <state key="normal" title="Post!"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98519349499999997" green="1" blue="0.96760669399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="71c-1N-QM2"/>
                 </viewController>
@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="ETh-e1-wxd" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell1" rowHeight="135" id="ETh-e1-wxd" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETh-e1-wxd" id="C4d-sD-U0M">
@@ -273,7 +273,7 @@
                                     <segue destination="5AJ-DY-bbq" kind="show" identifier="categorySegue" id="SeE-cC-2G0"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="jZ7-Fw-JAs" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell2" rowHeight="135" id="jZ7-Fw-JAs" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="163" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZ7-Fw-JAs" id="U4E-Pn-zCQ">
@@ -312,7 +312,7 @@
                                     <outlet property="categoryName" destination="dcL-HY-qCO" id="TMF-AR-Zhy"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="KTi-G3-jpu" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell3" rowHeight="135" id="KTi-G3-jpu" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="298" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTi-G3-jpu" id="d8d-52-dSa">
@@ -351,7 +351,7 @@
                                     <outlet property="categoryName" destination="63d-k9-FqO" id="x2Y-aE-mYt"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="fct-eK-eeH" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell4" rowHeight="135" id="fct-eK-eeH" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="433" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fct-eK-eeH" id="dao-cZ-oFW">
@@ -390,7 +390,7 @@
                                     <outlet property="categoryName" destination="VpS-Vk-fRT" id="7KH-GR-GJh"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="135" id="qzp-Gp-JBq" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell5" rowHeight="135" id="qzp-Gp-JBq" customClass="CategoriesTableViewCell" customModule="Free4Me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="568" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qzp-Gp-JBq" id="AOI-Vz-gJU">
