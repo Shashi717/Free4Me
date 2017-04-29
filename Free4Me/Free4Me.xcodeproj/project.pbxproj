@@ -19,6 +19,7 @@
 		9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA251EB4FC9800275967 /* FreebieStore.swift */; };
 		9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA271EB4FCA200275967 /* UserStore.swift */; };
 		9BC0EA2A1EB4FDF400275967 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */; };
+		9BC0EA2C1EB5115E00275967 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */; };
 		B656826F0F95881D4AD7CA86 /* Pods_Free4Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		9BC0EA251EB4FC9800275967 /* FreebieStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieStore.swift; sourceTree = "<group>"; };
 		9BC0EA271EB4FCA200275967 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free4Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E48EA20741EF8022316DE5 /* Pods-Free4Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 			children = (
 				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
 				9BA723981EB4EB9100A19919 /* Main.storyboard */,
+				9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */,
 				9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */,
 				9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */,
 				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
@@ -238,6 +241,7 @@
 				9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */,
 				9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */,
 				9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */,
+				9BC0EA2C1EB5115E00275967 /* CategoriesTableViewController.swift in Sources */,
 				9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */,
 				9BC0EA241EB4FB7200275967 /* User.swift in Sources */,
 				9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */,

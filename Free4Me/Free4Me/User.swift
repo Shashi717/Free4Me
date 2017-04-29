@@ -10,4 +10,16 @@ import Foundation
 
 class User {
     
+    let id: String
+    let name: String
+    let email: String
+    let borough: String
+    
+    init(id: String, name: String, email: String, borough: String) {
+        self.id = id
+        self.name = name
+        self.email = email
+        self.borough = borough
+    }
+    
 }

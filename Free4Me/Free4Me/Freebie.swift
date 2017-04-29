@@ -24,16 +24,20 @@ import Foundation
 
 class Freebie {
     
+    let id: String
     let name: String
-    let category: Category
-    let owner: User
-    let borough: Borough
+    let image: String
+    let category: String
+    let ownerId: String
+    let borough: String
     let expiration: String
     
-    init(name: String, category: Category, owner: User, borough: Borough, expiration: String) {
+    init(id: String, name: String, image: String, category: String, ownerId: String, borough: String, expiration: String) {
+        self.id = id
         self.name = name
+        self.image = image
         self.category = category
-        self.owner = owner
+        self.ownerId = ownerId
         self.borough = borough
         self.expiration = expiration
     }
