@@ -35,8 +35,6 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         freebieStore = FreebieStore()
         freebieStore?.getItems(completion: { (freebieArr) in
             self.itemsArr = freebieArr
-            self.freebiesCollectionView.reloadData()
-            
             self.sortItemsByBorough(freebieArr)
             print(self.itemsArr)
             self.freebiesCollectionView.reloadData()
@@ -81,8 +79,11 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         APIRequestManager.manager.getData(endPoint: imageStr) { (data) in
             if let validData = data, let validImage = UIImage(data: validData) {
-                cell.freebieImageView.image = validImage
-                self.freebiesCollectionView.reloadData()
+                
+                DispatchQueue.main.async {
+                    cell.freebieImageView.image = validImage
+                }
+                
             }
         }
         
