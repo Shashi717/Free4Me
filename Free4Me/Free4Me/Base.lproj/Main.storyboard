@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
+
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -282,12 +283,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="71c-1N-QM2"/>
                     <connections>
+                        <outlet property="addImageView" destination="cI7-zs-mME" id="7PS-8V-OVV"/>
+                        <outlet property="boroughView" destination="cKI-3j-izB" id="ujq-nw-QQL"/>
                         <outlet property="categoryPickerView" destination="LTa-hi-JmR" id="vpD-sc-o5b"/>
                         <outlet property="datePickerView" destination="g5x-ge-aYF" id="8ud-v8-50Q"/>
-                        <outlet property="imageButton" destination="A49-JG-VvJ" id="ygm-kX-LKJ"/>
+
+                        <outlet property="expirationView" destination="4Dg-JL-Gba" id="sxk-X2-0Zh"/>
+                        <outlet property="mainUploadView" destination="Em3-EF-TIv" id="5hr-bf-Hpb"/>
+
                         <outlet property="nameTextField" destination="Qu9-XW-iRM" id="5bq-A0-kMT"/>
                         <outlet property="pickedImageView" destination="3KE-Yx-km5" id="9u0-hj-RBr"/>
                         <outlet property="postButton" destination="pOK-X7-ge5" id="TZk-FU-vZL"/>
+                        <outlet property="titleView" destination="jaD-sn-n0V" id="Avy-Lx-E2o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eep-a2-GGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
