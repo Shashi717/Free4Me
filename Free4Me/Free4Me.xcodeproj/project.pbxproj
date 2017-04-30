@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1A2BA21EB58FD000E5DC43 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A2BA11EB58FD000E5DC43 /* APIRequestManager.swift */; };
 		9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723941EB4EB9100A19919 /* AppDelegate.swift */; };
 		9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA723981EB4EB9100A19919 /* Main.storyboard */; };
 		9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239B1EB4EB9100A19919 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		37BAD9D202314491E93F48E4 /* Pods-Free4Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.release.xcconfig"; sourceTree = "<group>"; };
+		9B1A2BA11EB58FD000E5DC43 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		9BA723911EB4EB9100A19919 /* Free4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA723941EB4EB9100A19919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA723991EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
 				9BC0EA301EB5309900275967 /* PostViewController.swift */,
 				9BC0EA321EB56EBC00275967 /* LoginViewController.swift */,
+				9B1A2BA11EB58FD000E5DC43 /* APIRequestManager.swift */,
 				9BC0EA2F1EB5179700275967 /* Model */,
 				9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */,
 				9BA7239B1EB4EB9100A19919 /* Assets.xcassets */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A2BA21EB58FD000E5DC43 /* APIRequestManager.swift in Sources */,
 				9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */,
 				9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */,
 				9BC0EA2E1EB5156400275967 /* CategoriesTableViewCell.swift in Sources */,
