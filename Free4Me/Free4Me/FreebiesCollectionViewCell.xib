@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-kS-Zkk">
-                        <rect key="frame" x="0.0" y="0.0" width="254" height="351"/>
+                        <rect key="frame" x="4" y="4" width="246" height="343"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-eg-YaG">
                         <rect key="frame" x="0.0" y="313" width="254" height="30"/>
@@ -35,10 +35,10 @@
             <constraints>
                 <constraint firstItem="CCg-eg-YaG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="92m-jc-fmv"/>
                 <constraint firstAttribute="trailing" secondItem="CCg-eg-YaG" secondAttribute="trailing" id="WYS-uC-PBd"/>
-                <constraint firstAttribute="trailing" secondItem="tgp-kS-Zkk" secondAttribute="trailing" id="g7v-vU-HzF"/>
-                <constraint firstItem="tgp-kS-Zkk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pU8-Jv-ggj"/>
-                <constraint firstItem="tgp-kS-Zkk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rmF-yr-nMd"/>
-                <constraint firstAttribute="bottom" secondItem="tgp-kS-Zkk" secondAttribute="bottom" id="v6O-Cn-rCl"/>
+                <constraint firstAttribute="trailing" secondItem="tgp-kS-Zkk" secondAttribute="trailing" constant="4" id="g7v-vU-HzF"/>
+                <constraint firstItem="tgp-kS-Zkk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="pU8-Jv-ggj"/>
+                <constraint firstItem="tgp-kS-Zkk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="rmF-yr-nMd"/>
+                <constraint firstAttribute="bottom" secondItem="tgp-kS-Zkk" secondAttribute="bottom" constant="4" id="v6O-Cn-rCl"/>
                 <constraint firstAttribute="bottom" secondItem="CCg-eg-YaG" secondAttribute="bottom" constant="8" id="y2H-5r-RXe"/>
             </constraints>
             <size key="customSize" width="254" height="351"/>

@@ -11,12 +11,14 @@ import UIKit
 class CategoriesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var categoryImageView: UIImageView!
-
     @IBOutlet weak var categoryName: UILabel!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        categoryName.layer.shadowRadius = 2
+        categoryName.layer.shadowOffset = CGSize(width: 0, height: 3)
+        categoryName.layer.shadowOpacity = 0.2
         // Initialization code
     }
 
