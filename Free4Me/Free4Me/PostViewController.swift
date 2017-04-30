@@ -50,6 +50,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let storageRef = storage.reference(forURL: "gs://free4me-49bcf.appspot.com")
         var imageURL = ""
         let imageNameRef = storageRef.child("images/\(postRef.key)")
+        var expiration = "N/A"
         
         let metadata = FIRStorageMetadata()
         metadata.cacheControl = "public,max-age=300"
@@ -66,30 +67,29 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                         return
                     }
                     if let metadataURL = metadata?.downloadURL()?.absoluteString {
-                       imageURL = metadataURL
+                        imageURL = metadataURL
+                        
+                        if let name = self.nameTextField.text,
+                            let category = self.pickedCategory,
+                            let pickedDate = self.pickedDate {
+                            
+                            expiration = pickedDate
+                            self.userStore?.getUser(id: userId) { (user) in
+                                
+                                let freebieDict = ["name": name, "image": imageURL, "category": category, "ownerId": userId, "borough": user.borough, "expiration":expiration] as [String:Any]
+                                let postDict = ["name": name, "image": imageURL, "category": category, "expiration":expiration] as [String:Any]
+                                
+                                self.databaseRef.child("freebies").childByAutoId().setValue(freebieDict)
+                                self.databaseRef.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).updateChildValues(postDict)
+                                
+                            }
+                            
+                        }
                     }
                 })
                 
             }
-            
-            var expiration = "N/A"
-            if let name = nameTextField.text,
-                let category = pickedCategory,
-                let pickedDate = pickedDate {
                 
-                expiration = pickedDate
-                userStore?.getUser(id: userId) { (user) in
-                
-                    let freebieDict = ["name": name, "image": imageURL, "category": category, "ownerId": userId, "borough": user.borough, "expiration":expiration] as [String:Any]
-                    let postDict = ["name": name, "image": imageURL, "category": category, "expiration":expiration] as [String:Any]
-                    
-                  
-                    self.databaseRef.child("freebies").childByAutoId().setValue(freebieDict)
-                    self.databaseRef.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).updateChildValues(postDict)
-                    
-                }
-                
-            }
             else {
                 print("not completed")
             }
@@ -99,7 +99,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             let alertController = showAlert(title: "Not signed in!", message: "You need to sign in to post an item. Would you like to be directed to the login page?", useDefaultAction: false)
             
             alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-               
+                
                 let loginVC = LoginViewController()
                 self.present(loginVC, animated: true, completion: nil)
                 
@@ -115,7 +115,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
     }
     
-
+    
     
     @IBAction func postButtonTapped(_ sender: UIButton) {
         
@@ -163,7 +163,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         pickedDate = String(describing: datePickerView.date)
@@ -180,7 +180,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.imagePickerController = imagePickerController
         self.present(imagePickerController, animated: true, completion: nil)
         
-
+        
     }
     
     /*
