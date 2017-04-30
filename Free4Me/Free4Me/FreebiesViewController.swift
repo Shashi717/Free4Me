@@ -68,6 +68,7 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         return itemsArr.count
     }
     
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
