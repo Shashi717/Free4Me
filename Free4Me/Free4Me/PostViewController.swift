@@ -14,13 +14,6 @@ import AVFoundation
 import AVKit
 import MobileCoreServices
 
-//let name: String
-//let image: String
-//let category: String
-//let ownerId: String
-//let borough: String
-//let expiration: String
-
 class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -115,12 +108,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
     }
     
-    func postImage(postRef: String, imageNameRef: String) {
-        
-        
-        
-    }
-    
+
     
     @IBAction func postButtonTapped(_ sender: UIButton) {
         

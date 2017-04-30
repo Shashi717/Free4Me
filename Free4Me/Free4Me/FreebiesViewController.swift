@@ -17,6 +17,7 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     var boroughs = ["All", "Bronx", "Brooklyn", "Manhattan", "Queens"]
     var selectedCategory = ""
     var selectedBorough = "all"
+    var freebieStore: FreebieStore?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,26 +28,30 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let nib = UINib(nibName: "FreebiesCollectionViewCell", bundle:nil)
         freebiesCollectionView.register(nib, forCellWithReuseIdentifier: "freebieCell")
+        
+        freebieStore = FreebieStore()
+        freebieStore?.getItems(completion: { (freebieArr) in
+            self.itemsArr = freebieArr
+            self.freebiesCollectionView.reloadData()
+        })
       
     }
-
-    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return itemsArr.count
     }
     
   
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = freebiesCollectionView.dequeueReusableCell(withReuseIdentifier: "freebieCell", for: indexPath) as! FreebiesCollectionViewCell
+        let item = itemsArr[indexPath.row]
         
-        cell.freebieName.text = ""
+        cell.freebieName.text = item.name
         
         return cell
     }
@@ -54,8 +59,6 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         
         selectedBorough = boroughs[boroSegmentedControl.selectedSegmentIndex]
-        
-        
         
     }
     
