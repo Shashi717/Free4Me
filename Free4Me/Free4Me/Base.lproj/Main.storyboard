@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,7 +73,6 @@
                         <outlet property="boroughTextField" destination="dK3-JA-C88" id="A4d-I6-dbR"/>
                         <outlet property="emailTextField" destination="aeK-e2-nJO" id="1wn-eu-7cJ"/>
                         <outlet property="passwordTextField" destination="qCx-ex-oKa" id="zB7-Im-jdo"/>
-
                         <outlet property="userNameTextField" destination="0IO-Yk-qBb" id="dTX-pF-bHG"/>
                     </connections>
                 </viewController>
@@ -183,30 +182,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI7-zs-mME">
                                 <rect key="frame" x="16" y="222" width="343" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A49-JG-VvJ">
-                                        <rect key="frame" x="260" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="JaR-sd-w8v"/>
-                                            <constraint firstAttribute="height" constant="75" id="gVz-Un-gvz"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="image"/>
-                                        <connections>
-                                            <action selector="pickImageTapped:" destination="jA8-nY-2FE" eventType="touchUpInside" id="3LM-HB-cS6"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI4-2K-jI1">
-                                        <rect key="frame" x="8" y="27" width="47" height="21"/>
+                                        <rect key="frame" x="8" y="27" width="244" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="3KE-Yx-km5">
+                                        <rect key="frame" x="260" y="8" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="k7h-2I-eOa"/>
+                                            <constraint firstAttribute="width" constant="75" id="qUk-Rl-1iu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A49-JG-VvJ">
+                                        <rect key="frame" x="260" y="8" width="75" height="75"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.84705882352941175" green="0.31372549019607843" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickImageTapped:" destination="jA8-nY-2FE" eventType="touchUpInside" id="3LM-HB-cS6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="3KE-Yx-km5" firstAttribute="top" secondItem="cI7-zs-mME" secondAttribute="top" constant="8" id="6be-Kx-pgY"/>
+                                    <constraint firstItem="A49-JG-VvJ" firstAttribute="trailing" secondItem="3KE-Yx-km5" secondAttribute="trailing" id="D3J-Bn-xPV"/>
+                                    <constraint firstItem="3KE-Yx-km5" firstAttribute="leading" secondItem="BI4-2K-jI1" secondAttribute="trailing" constant="8" id="GqO-bN-9ps"/>
+                                    <constraint firstAttribute="trailing" secondItem="3KE-Yx-km5" secondAttribute="trailing" constant="8" id="Kef-Hc-DEc"/>
+                                    <constraint firstItem="A49-JG-VvJ" firstAttribute="top" secondItem="3KE-Yx-km5" secondAttribute="top" id="PbN-yu-OHs"/>
                                     <constraint firstItem="BI4-2K-jI1" firstAttribute="leading" secondItem="cI7-zs-mME" secondAttribute="leading" constant="8" id="Zjb-1p-OCn"/>
-                                    <constraint firstAttribute="trailing" secondItem="A49-JG-VvJ" secondAttribute="trailing" constant="8" id="eGT-l7-s3J"/>
                                     <constraint firstItem="BI4-2K-jI1" firstAttribute="centerY" secondItem="cI7-zs-mME" secondAttribute="centerY" id="i34-9n-xnW"/>
-                                    <constraint firstItem="A49-JG-VvJ" firstAttribute="centerY" secondItem="cI7-zs-mME" secondAttribute="centerY" id="k0t-T8-wTP"/>
+                                    <constraint firstItem="A49-JG-VvJ" firstAttribute="leading" secondItem="3KE-Yx-km5" secondAttribute="leading" id="js5-up-dHn"/>
+                                    <constraint firstItem="A49-JG-VvJ" firstAttribute="bottom" secondItem="3KE-Yx-km5" secondAttribute="bottom" id="vmh-am-FFy"/>
                                     <constraint firstAttribute="height" constant="75" id="ysf-IC-mGd"/>
                                 </constraints>
                             </view>
@@ -275,37 +284,15 @@
                     <connections>
                         <outlet property="categoryPickerView" destination="LTa-hi-JmR" id="vpD-sc-o5b"/>
                         <outlet property="datePickerView" destination="g5x-ge-aYF" id="8ud-v8-50Q"/>
+                        <outlet property="imageButton" destination="A49-JG-VvJ" id="ygm-kX-LKJ"/>
                         <outlet property="nameTextField" destination="Qu9-XW-iRM" id="5bq-A0-kMT"/>
+                        <outlet property="pickedImageView" destination="3KE-Yx-km5" id="9u0-hj-RBr"/>
                         <outlet property="postButton" destination="pOK-X7-ge5" id="TZk-FU-vZL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eep-a2-GGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1436" y="676.91154422788611"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="8nu-DQ-Apy">
-            <objects>
-                <viewController id="ZAT-M7-t7O" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nxh-0O-Zpg"/>
-                        <viewControllerLayoutGuide type="bottom" id="d54-Pv-a8h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="i1h-cm-5ZO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group-2" translatesAutoresizingMaskIntoConstraints="NO" id="ivQ-lS-PnY">
-                                <rect key="frame" x="51" y="20" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e2L-OJ-kBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2131" y="668"/>
         </scene>
         <!--Freebies View Controller-->
         <scene sceneID="fYz-G2-wtw">
@@ -546,7 +533,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group-2" width="375" height="622"/>
         <image name="Home-512 (1)" width="40" height="40"/>
         <image name="Icon-Setting-1" width="28" height="28"/>
         <image name="Rectangle" width="375" height="667"/>
