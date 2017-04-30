@@ -44,7 +44,39 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         userStore = UserStore()
         
         customizeUI()
+        changeBorders()
     }
+
+    
+    @IBOutlet var mainUploadView: UIView!
+    
+    
+//    @IBOutlet weak var titleView: UITextField!
+    
+    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var boroughView: UIView!
+   
+    @IBOutlet weak var addImageView: UIView!
+    
+    @IBOutlet weak var expirationView: UIView!
+    
+    func changeBorders(){
+        
+        
+        titleView.layer.borderWidth = 1
+        titleView.layer.borderColor = UIColor(red:0.85, green:0.31, blue:0.32, alpha:1.0).cgColor
+        
+        
+        boroughView.layer.borderWidth = 1
+        boroughView.layer.borderColor = UIColor(red:0.85, green:0.31, blue:0.32, alpha:1.0).cgColor
+        
+        addImageView.layer.borderWidth = 1
+        addImageView.layer.borderColor = UIColor(red:0.85, green:0.31, blue:0.32, alpha:1.0).cgColor
+        
+        expirationView.layer.borderWidth = 1
+        expirationView.layer.borderColor = UIColor(red:0.85, green:0.31, blue:0.32, alpha:1.0).cgColor
+    }
+    
     
     func customizeUI() {
         
