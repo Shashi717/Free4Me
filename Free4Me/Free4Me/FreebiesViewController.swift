@@ -38,6 +38,8 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             self.freebiesCollectionView.reloadData()
             
             self.sortItemsByBorough(freebieArr)
+            print(self.itemsArr)
+            self.freebiesCollectionView.reloadData()
         })
         
     }

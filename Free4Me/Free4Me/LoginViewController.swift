@@ -14,17 +14,30 @@ class LoginViewController: UIViewController, UIAlertViewDelegate {
     
     
     @IBOutlet weak var userNameTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var boroughTextField: UITextField!
-     var databaseRef: FIRDatabaseReference!
+    
+    var databaseRef: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-           databaseRef = FIRDatabase.database().reference()
+        databaseRef = FIRDatabase.database().reference()
+        loginCheck()
+        
+    }
+    
+    func loginCheck() {
+        if FIRAuth.auth()?.currentUser != nil {
+            //            let tabs = UITabBarController()
+            //            tabs.viewControllers = [FreebiesViewController(), PostViewController(), SettingsViewController()]
+            //            self.present(tabs, animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tbvc = storyboard.instantiateViewController(withIdentifier: "TabBarVC")
+            self.present(tbvc, animated: true, completion: nil)
+            
+        }
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
@@ -48,7 +61,6 @@ class LoginViewController: UIViewController, UIAlertViewDelegate {
                     self.clearTextFields()
                     
                     alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                        
                         self.present(tbvc, animated: true, completion: nil)
                     }))
                     
@@ -73,7 +85,6 @@ class LoginViewController: UIViewController, UIAlertViewDelegate {
                 else {
                     let alertController = showAlert(title: "Signup Successful!", message: "Successfully Registered. Please Login to Use Our App!", useDefaultAction: true)
                     
-                
                     let postDict = ["name": name, "email": email, "borough": borough] as [String:Any]
                     
                     let currentUser = FIRAuth.auth()?.currentUser?.uid

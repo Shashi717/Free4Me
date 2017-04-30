@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B17C1191EB5AAD900EA231E /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */; };
+		9B1E53961EB6152500C03640 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E53951EB6152500C03640 /* SettingsViewController.swift */; };
 		9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723941EB4EB9100A19919 /* AppDelegate.swift */; };
 		9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA723981EB4EB9100A19919 /* Main.storyboard */; };
 		9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		37BAD9D202314491E93F48E4 /* Pods-Free4Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.release.xcconfig"; sourceTree = "<group>"; };
 		9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		9B1E53951EB6152500C03640 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BA723911EB4EB9100A19919 /* Free4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA723941EB4EB9100A19919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA723991EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9B1E53971EB6181900C03640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */,
+				9BC0EA2D1EB5156400275967 /* CategoriesTableViewCell.swift */,
+				9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */,
+				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
+				9BA723981EB4EB9100A19919 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9B1E53981EB6184100C03640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */,
+				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
+				9BC0EA301EB5309900275967 /* PostViewController.swift */,
+				9BC0EA321EB56EBC00275967 /* LoginViewController.swift */,
+				9B1E53951EB6152500C03640 /* SettingsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B1E53991EB6187B00C03640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA723A01EB4EB9100A19919 /* Info.plist */,
+				9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */,
+				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
+				EFFF13551EB566DA00DDF4CD /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9BA723881EB4EB9100A19919 = {
 			isa = PBXGroup;
 			children = (
@@ -93,21 +130,10 @@
 		9BA723931EB4EB9100A19919 /* Free4Me */ = {
 			isa = PBXGroup;
 			children = (
-				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
-				9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */,
-				9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */,
-				EFFF13551EB566DA00DDF4CD /* Assets.xcassets */,
-				9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */,
-				9BC0EA2D1EB5156400275967 /* CategoriesTableViewCell.swift */,
-				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
-				9BC0EA301EB5309900275967 /* PostViewController.swift */,
-				9BC0EA321EB56EBC00275967 /* LoginViewController.swift */,
-				9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */,
+				9B1E53981EB6184100C03640 /* Controller */,
+				9B1E53971EB6181900C03640 /* View */,
 				9BC0EA2F1EB5179700275967 /* Model */,
-				9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */,
-				9BA723981EB4EB9100A19919 /* Main.storyboard */,
-				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
-				9BA723A01EB4EB9100A19919 /* Info.plist */,
+				9B1E53991EB6187B00C03640 /* Supporting Files */,
 			);
 			path = Free4Me;
 			sourceTree = "<group>";
@@ -119,6 +145,7 @@
 				9BC0EA271EB4FCA200275967 /* UserStore.swift */,
 				9BC0EA211EB4FB2200275967 /* Freebie.swift */,
 				9BC0EA231EB4FB7200275967 /* User.swift */,
+				9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,6 +295,7 @@
 				9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */,
 				9BC0EA241EB4FB7200275967 /* User.swift in Sources */,
 				9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */,
+				9B1E53961EB6152500C03640 /* SettingsViewController.swift in Sources */,
 				9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */,
 				9BC0EA331EB56EBC00275967 /* LoginViewController.swift in Sources */,
 			);
