@@ -14,7 +14,7 @@ import AVFoundation
 import AVKit
 import MobileCoreServices
 
-class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var categoryPickerView: UIPickerView!
@@ -41,6 +41,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         categoryPickerView.delegate = self
         categoryPickerView.dataSource = self
+        nameTextField.delegate = self
         databaseRef = FIRDatabase.database().reference()
         userStore = UserStore()
         
@@ -129,6 +130,11 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBAction func postButtonTapped(_ sender: UIButton) {
         
         self.postToFirebase()
+        
+        let alertController = showAlert(title: "Successfully Posted!", message: nil, useDefaultAction: true)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -190,6 +196,11 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.present(imagePickerController, animated: true, completion: nil)
         
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
     }
     
     /*

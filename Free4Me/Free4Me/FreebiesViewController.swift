@@ -47,13 +47,21 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         for item in arr {
             switch item.borough {
             case "Bronx":
-                bronxItems.append(item)
+                if item.category == selectedCategory {
+                    bronxItems.append(item)
+                }
             case "Brooklyn":
-                brooklynItems.append(item)
+                if item.category == selectedCategory {
+                    brooklynItems.append(item)
+                }
             case "Manhattan":
-                manhattanItems.append(item)
+                if item.category == selectedCategory {
+                    manhattanItems.append(item)
+                }
             case "Queens":
-                queensItems.append(item)
+                if item.category == selectedCategory {
+                    queensItems.append(item)
+                }
             default:
                 break
             }
@@ -68,7 +76,7 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         return itemsArr.count
     }
     
-
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -127,7 +135,7 @@ class FreebiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     
-
+    
     /*
      // MARK: - Navigation
      
