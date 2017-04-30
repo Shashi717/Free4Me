@@ -20,6 +20,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var categoryPickerView: UIPickerView!
     @IBOutlet weak var datePickerView: UIDatePicker!
     @IBOutlet weak var pickedImageView: UIImageView!
+    @IBOutlet weak var imageButton: UIButton!
     
     @IBOutlet weak var postButton: UIButton!
     
