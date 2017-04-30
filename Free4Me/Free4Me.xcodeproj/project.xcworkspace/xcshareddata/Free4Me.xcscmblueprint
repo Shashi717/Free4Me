@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2EAB0A503488C7F875C72003FB5D3DB738A1BBDF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE5BB8B9A57DD779848A243A54D79680CB107D28" : 9223372036854775807,
+    "2EAB0A503488C7F875C72003FB5D3DB738A1BBDF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0E5036EB-1F01-47EB-9708-905E990A45E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DE5BB8B9A57DD779848A243A54D79680CB107D28" : "",
+    "2EAB0A503488C7F875C72003FB5D3DB738A1BBDF" : "Free4Me\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Free4Me",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Free4Me\/Free4Me.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Shashi717\/Free4Me.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2EAB0A503488C7F875C72003FB5D3DB738A1BBDF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/C4Q\/AC3.2-groupThree-ImmigrantServices.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE5BB8B9A57DD779848A243A54D79680CB107D28"
+    }
+  ]
+}

@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B17C1191EB5AAD900EA231E /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */; };
+		9B1E53961EB6152500C03640 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E53951EB6152500C03640 /* SettingsViewController.swift */; };
 		9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723941EB4EB9100A19919 /* AppDelegate.swift */; };
-		9BA723971EB4EB9100A19919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA723961EB4EB9100A19919 /* ViewController.swift */; };
 		9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA723981EB4EB9100A19919 /* Main.storyboard */; };
-		9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239B1EB4EB9100A19919 /* Assets.xcassets */; };
 		9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */; };
+		9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */; };
+		9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */; };
+		9BC0EA201EB4F84A00275967 /* FreebiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */; };
+		9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA211EB4FB2200275967 /* Freebie.swift */; };
+		9BC0EA241EB4FB7200275967 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA231EB4FB7200275967 /* User.swift */; };
+		9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA251EB4FC9800275967 /* FreebieStore.swift */; };
+		9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA271EB4FCA200275967 /* UserStore.swift */; };
+		9BC0EA2A1EB4FDF400275967 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */; };
+		9BC0EA2C1EB5115E00275967 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */; };
+		9BC0EA2E1EB5156400275967 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA2D1EB5156400275967 /* CategoriesTableViewCell.swift */; };
+		9BC0EA311EB5309900275967 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA301EB5309900275967 /* PostViewController.swift */; };
+		9BC0EA331EB56EBC00275967 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA321EB56EBC00275967 /* LoginViewController.swift */; };
+		B656826F0F95881D4AD7CA86 /* Pods_Free4Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */; };
+		EFFF13561EB566DA00DDF4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFF13551EB566DA00DDF4CD /* Assets.xcassets */; };
+		FA6B81F71EB62AD40042AA05 /* EmailTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37BAD9D202314491E93F48E4 /* Pods-Free4Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.release.xcconfig"; sourceTree = "<group>"; };
+		9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		9B1E53951EB6152500C03640 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BA723911EB4EB9100A19919 /* Free4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA723941EB4EB9100A19919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BA723961EB4EB9100A19919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BA723991EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9BA7239B1EB4EB9100A19919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA7239E1EB4EB9100A19919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA723A01EB4EB9100A19919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesViewController.swift; sourceTree = "<group>"; };
+		9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreebiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BC0EA211EB4FB2200275967 /* Freebie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freebie.swift; sourceTree = "<group>"; };
+		9BC0EA231EB4FB7200275967 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9BC0EA251EB4FC9800275967 /* FreebieStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebieStore.swift; sourceTree = "<group>"; };
+		9BC0EA271EB4FCA200275967 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		9BC0EA2D1EB5156400275967 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		9BC0EA301EB5309900275967 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9BC0EA321EB56EBC00275967 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free4Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E48EA20741EF8022316DE5 /* Pods-Free4Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.debug.xcconfig"; sourceTree = "<group>"; };
+		EFFF13551EB566DA00DDF4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B656826F0F95881D4AD7CA86 /* Pods_Free4Me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21ACEF8FB2200379DDC747F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B1E53971EB6181900C03640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0EA1D1EB4F84A00275967 /* FreebiesCollectionViewCell.swift */,
+				9BC0EA2D1EB5156400275967 /* CategoriesTableViewCell.swift */,
+				9BC0EA1E1EB4F84A00275967 /* FreebiesCollectionViewCell.xib */,
+				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
+				9BA723981EB4EB9100A19919 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9B1E53981EB6184100C03640 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */,
+				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
+				FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */,
+				9BC0EA301EB5309900275967 /* PostViewController.swift */,
+				9BC0EA321EB56EBC00275967 /* LoginViewController.swift */,
+				9B1E53951EB6152500C03640 /* SettingsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B1E53991EB6187B00C03640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA723A01EB4EB9100A19919 /* Info.plist */,
+				9BC0EA291EB4FDF400275967 /* GoogleService-Info.plist */,
+				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
+				EFFF13551EB566DA00DDF4CD /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9BA723881EB4EB9100A19919 = {
 			isa = PBXGroup;
 			children = (
 				9BA723931EB4EB9100A19919 /* Free4Me */,
 				9BA723921EB4EB9100A19919 /* Products */,
+				EED72F39E39419DC295D4A47 /* Pods */,
+				21ACEF8FB2200379DDC747F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +133,33 @@
 		9BA723931EB4EB9100A19919 /* Free4Me */ = {
 			isa = PBXGroup;
 			children = (
-				9BA723941EB4EB9100A19919 /* AppDelegate.swift */,
-				9BA723961EB4EB9100A19919 /* ViewController.swift */,
-				9BA723981EB4EB9100A19919 /* Main.storyboard */,
-				9BA7239B1EB4EB9100A19919 /* Assets.xcassets */,
-				9BA7239D1EB4EB9100A19919 /* LaunchScreen.storyboard */,
-				9BA723A01EB4EB9100A19919 /* Info.plist */,
+				9B1E53981EB6184100C03640 /* Controller */,
+				9B1E53971EB6181900C03640 /* View */,
+				9BC0EA2F1EB5179700275967 /* Model */,
+				9B1E53991EB6187B00C03640 /* Supporting Files */,
 			);
 			path = Free4Me;
+			sourceTree = "<group>";
+		};
+		9BC0EA2F1EB5179700275967 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0EA251EB4FC9800275967 /* FreebieStore.swift */,
+				9BC0EA271EB4FCA200275967 /* UserStore.swift */,
+				9BC0EA211EB4FB2200275967 /* Freebie.swift */,
+				9BC0EA231EB4FB7200275967 /* User.swift */,
+				9B17C1181EB5AAD900EA231E /* APIRequestManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EED72F39E39419DC295D4A47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4E48EA20741EF8022316DE5 /* Pods-Free4Me.debug.xcconfig */,
+				37BAD9D202314491E93F48E4 /* Pods-Free4Me.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BA723A31EB4EB9100A19919 /* Build configuration list for PBXNativeTarget "Free4Me" */;
 			buildPhases = (
+				C950F48E37E8BA9AE47EFC15 /* [CP] Check Pods Manifest.lock */,
 				9BA7238D1EB4EB9100A19919 /* Sources */,
 				9BA7238E1EB4EB9100A19919 /* Frameworks */,
 				9BA7238F1EB4EB9100A19919 /* Resources */,
+				2609F60E54D073C224702E7F /* [CP] Embed Pods Frameworks */,
+				A5F03BE1A940E16321E784F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,20 +226,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA7239F1EB4EB9100A19919 /* LaunchScreen.storyboard in Resources */,
-				9BA7239C1EB4EB9100A19919 /* Assets.xcassets in Resources */,
 				9BA7239A1EB4EB9100A19919 /* Main.storyboard in Resources */,
+				9BC0EA201EB4F84A00275967 /* FreebiesCollectionViewCell.xib in Resources */,
+				9BC0EA2A1EB4FDF400275967 /* GoogleService-Info.plist in Resources */,
+				EFFF13561EB566DA00DDF4CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2609F60E54D073C224702E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F03BE1A940E16321E784F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C950F48E37E8BA9AE47EFC15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BA7238D1EB4EB9100A19919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA723971EB4EB9100A19919 /* ViewController.swift in Sources */,
+				9B17C1191EB5AAD900EA231E /* APIRequestManager.swift in Sources */,
+				9BC0EA1C1EB4F7E900275967 /* FreebiesViewController.swift in Sources */,
+				9BC0EA281EB4FCA200275967 /* UserStore.swift in Sources */,
+				9BC0EA2E1EB5156400275967 /* CategoriesTableViewCell.swift in Sources */,
 				9BA723951EB4EB9100A19919 /* AppDelegate.swift in Sources */,
+				9BC0EA311EB5309900275967 /* PostViewController.swift in Sources */,
+				9BC0EA2C1EB5115E00275967 /* CategoriesTableViewController.swift in Sources */,
+				9BC0EA221EB4FB2200275967 /* Freebie.swift in Sources */,
+				9BC0EA241EB4FB7200275967 /* User.swift in Sources */,
+				9BC0EA261EB4FC9800275967 /* FreebieStore.swift in Sources */,
+				9B1E53961EB6152500C03640 /* SettingsViewController.swift in Sources */,
+				9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */,
+				9BC0EA331EB56EBC00275967 /* LoginViewController.swift in Sources */,
+				FA6B81F71EB62AD40042AA05 /* EmailTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +424,7 @@
 		};
 		9BA723A41EB4EB9100A19919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E48EA20741EF8022316DE5 /* Pods-Free4Me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6ZU47QNTF;
@@ -274,6 +438,7 @@
 		};
 		9BA723A51EB4EB9100A19919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BAD9D202314491E93F48E4 /* Pods-Free4Me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6ZU47QNTF;
@@ -304,6 +469,7 @@
 				9BA723A51EB4EB9100A19919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
