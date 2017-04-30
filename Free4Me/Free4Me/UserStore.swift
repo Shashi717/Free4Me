@@ -15,6 +15,7 @@ class UserStore {
     
     func getUser(id: String, completion: @escaping (User) -> Void) {
         
+        
         self.databaseRef.child("users").child(id).observe(.value, with: {(snapshot) in
             
             var userObject: User?

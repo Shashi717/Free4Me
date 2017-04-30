@@ -48,6 +48,7 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let postRef = self.databaseRef.childByAutoId()
         let storage = FIRStorage.storage()
         let storageRef = storage.reference(forURL: "gs://free4me-49bcf.appspot.com")
+        var imageURL = ""
         let imageNameRef = storageRef.child("images/\(postRef.key)")
         
         let metadata = FIRStorageMetadata()
@@ -64,6 +65,9 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                         print("put error: \(String(describing: error?.localizedDescription))")
                         return
                     }
+                    if let metadataURL = metadata?.downloadURL()?.absoluteString {
+                       imageURL = metadataURL
+                    }
                 })
                 
             }
@@ -72,15 +76,16 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             if let name = nameTextField.text,
                 let category = pickedCategory,
                 let pickedDate = pickedDate {
+                
                 expiration = pickedDate
                 userStore?.getUser(id: userId) { (user) in
+                
+                    let freebieDict = ["name": name, "image": imageURL, "category": category, "ownerId": userId, "borough": user.borough, "expiration":expiration] as [String:Any]
+                    let postDict = ["name": name, "image": imageURL, "category": category, "expiration":expiration] as [String:Any]
                     
-                    
-                    
-                    let freebieDict = ["name": name, "image": imageNameRef, "category": category, "ownerId": userId, "borough": user.borough, "expiration":expiration] as [String:Any]
-                    let postDict = ["name": "", "image": imageNameRef, "category": category, "expiration":expiration] as [String:Any]
+                  
                     self.databaseRef.child("freebies").childByAutoId().setValue(freebieDict)
-                    self.databaseRef.child((FIRAuth.auth()?.currentUser?.uid)!).setValue(postDict)
+                    self.databaseRef.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).updateChildValues(postDict)
                     
                 }
                 
@@ -94,7 +99,9 @@ class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             let alertController = showAlert(title: "Not signed in!", message: "You need to sign in to post an item. Would you like to be directed to the login page?", useDefaultAction: false)
             
             alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                //go the login page
+               
+                let loginVC = LoginViewController()
+                self.present(loginVC, animated: true, completion: nil)
                 
             }))
             alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
