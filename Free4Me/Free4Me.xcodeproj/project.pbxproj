@@ -26,6 +26,7 @@
 		9BC0EA331EB56EBC00275967 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0EA321EB56EBC00275967 /* LoginViewController.swift */; };
 		B656826F0F95881D4AD7CA86 /* Pods_Free4Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */; };
 		EFFF13561EB566DA00DDF4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFF13551EB566DA00DDF4CD /* Assets.xcassets */; };
+		FA6B81F71EB62AD40042AA05 /* EmailTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B4E5E7D84B1BD1264727B52C /* Pods_Free4Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free4Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E48EA20741EF8022316DE5 /* Pods-Free4Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free4Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free4Me/Pods-Free4Me.debug.xcconfig"; sourceTree = "<group>"; };
 		EFFF13551EB566DA00DDF4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				9BC0EA2B1EB5115E00275967 /* CategoriesTableViewController.swift */,
 				9BC0EA1B1EB4F7E900275967 /* FreebiesViewController.swift */,
+				FA6B81F61EB62AD40042AA05 /* EmailTestViewController.swift */,
 				9BC0EA301EB5309900275967 /* PostViewController.swift */,
 				9BC0EA321EB56EBC00275967 /* LoginViewController.swift */,
 				9B1E53951EB6152500C03640 /* SettingsViewController.swift */,
@@ -298,6 +301,7 @@
 				9B1E53961EB6152500C03640 /* SettingsViewController.swift in Sources */,
 				9BC0EA1F1EB4F84A00275967 /* FreebiesCollectionViewCell.swift in Sources */,
 				9BC0EA331EB56EBC00275967 /* LoginViewController.swift in Sources */,
+				FA6B81F71EB62AD40042AA05 /* EmailTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
