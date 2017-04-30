@@ -17,6 +17,9 @@ class FreebiesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         self.backgroundColor = .white
+        freebieName.layer.shadowRadius = 2
+        freebieName.layer.shadowOffset = CGSize(width: 0, height: 3)
+        freebieName.layer.shadowOpacity = 0.2
     }
 
 }
