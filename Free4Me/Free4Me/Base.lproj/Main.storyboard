@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="war-qX-cEI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1436" y="1403.7481259370315"/>
         </scene>
-        <!--View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="fzI-OY-jf4">
             <objects>
-                <viewController id="jA8-nY-2FE" sceneMemberID="viewController">
+                <viewController id="jA8-nY-2FE" customClass="PostViewController" customModule="Free4Me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6J1-Sv-9ff"/>
                         <viewControllerLayoutGuide type="bottom" id="lxA-Yb-o8y"/>
@@ -86,6 +86,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="515195047.16596103">
                                     <!--2017-04-29 21:44:07 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="jA8-nY-2FE" eventType="valueChanged" id="Vgv-MA-NSC"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-QN-jKd">
                                 <rect key="frame" x="0.0" y="80" width="81" height="21"/>
@@ -124,12 +127,29 @@
                                 <rect key="frame" x="169" y="560" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post!"/>
+                                <connections>
+                                    <action selector="postButtonTapped:" destination="jA8-nY-2FE" eventType="touchUpInside" id="9i5-xb-TRD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-04-ASc">
+                                <rect key="frame" x="158" y="243" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pickImageTapped:" destination="jA8-nY-2FE" eventType="touchUpInside" id="N7x-6M-5A2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="71c-1N-QM2"/>
+                    <connections>
+                        <outlet property="categoryPickerView" destination="fV1-zn-3iF" id="oEA-n1-n9N"/>
+                        <outlet property="datePickerView" destination="2d2-8G-XcF" id="Fxp-EL-KlV"/>
+                        <outlet property="nameTextField" destination="XSi-S9-jxY" id="uht-uT-BvS"/>
+                        <outlet property="pickedImageView" destination="F5S-vc-23o" id="bca-dg-OBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eep-a2-GGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,7 +258,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETh-e1-wxd" id="C4d-sD-U0M">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-hi-ogx">
